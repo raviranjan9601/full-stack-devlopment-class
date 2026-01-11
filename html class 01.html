@@ -1,0 +1,292 @@
+<!-- 1at class of HTML -->
+<!-- 
+full from of HTML is Hyper Text Markup Language
+
+
+html is a markup language
+
+give instruction useing tag and element.
+
+synex of tag :
+
+they are 3 types :
+1st is opening tag  <tag>
+2nd is closing tag  </tag>
+3rd is no closing tag <img>
+
+attributes
+
+give elements additinol proparti.
+call attributes.
+
+syntex of attributes
+
+opening tag:
+<tag attribute Name="attribute Value">
+
+some tags are speacfic attribute like :
+
+<img scr="location of image.jpg">
+<input type="text">
+
+
+boolean attributes
+
+<input type="text" required>
+<input type="text" disable>
+
+genral purpose attribute
+
+1st is ID
+
+<p id="id ka name"> this paragrapg is for id purpose</p>
+
+2nd is class 
+
+<tag class="attribute value">
+    <p class="id name"> this is frist vlog </p>
+    <p class="id name 2"> this is second vlog </p>
+
+    they all are in same class but diffrent it use to css purpose and give some unicness.
+
+    
+
+id and class both are same done wore same but diffrent.
+
+
+-->
+
+<!-- DOCUMENT STRUCTURE -->
+
+<!-- BOILER PLATE CODE -->
+
+<!-- INSERT CODE IN VS CODE USE A SHORTCUT KEY IS '!' 
+THIS IS A EMMET ABBREVIATION
+
+-->
+
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ravi portfolio</title>
+
+</head>
+
+<body>
+    <!-- now start with 'HR' tag -->
+
+    <!--
+    <h1>–<h6>: The HTML Section Heading elements
+    The <h1> to <h6> HTML elements represent six levels of section headings. 
+    <h1> is the highest section level and <h6> is the lowest. By default, 
+    all heading elements create a block-level box in the layout, 
+    starting on a new line and taking up the full width available in 
+    their containing block. 
+    -->
+    
+    <!-- 
+    Heading information can be used by user agents to construct a table of contents for 
+    a document automatically.
+    Do not use heading elements to resize text. Instead, use the CSS font-size property.
+    Do not skip heading levels: always start from <h1>, followed by <h2> and so on.
+    -->
+
+    <h1>this is heading H1</h1>
+    <h2>this is heading H2</h2>
+    <h3>this is heading H3</h3>
+    <h4>this is heading H4</h4>
+    <h5>this is heading H5</h5>
+    <h6>this is heading H6</h6>
+
+    <!-- next is 'paragraph' tag -->
+
+    <!-- 
+    The <p> HTML element represents a paragraph. Paragraphs are usually represented in 
+    visual media as blocks of text separated from adjacent blocks by blank lines and/or 
+    first-line indentation, but HTML paragraphs can be any structural grouping of related content, 
+    such as images or form fields.
+     -->
+    
+    <!-- 
+    Paragraphs are block-level elements, and notably will automatically close if another 
+    block-level element is parsed before the closing </p> tag. See "Tag omission" below.
+    -->
+
+    <p>this is paragraph tag</p>
+    
+    <!-- next is 'BR' tag -->
+
+    <!-- 
+    The <br> HTML element produces a line break in text (carriage-return). 
+    It is useful for writing a poem or an address, where the division of lines is significant.
+    -->
+
+    <br>
+        <p>this is paragrapg line 2</p>
+    <br>
+        <p>this is after useing br tag result</p>
+
+    <!-- next is 'HR' tag -->
+
+
+    <!-- 
+    <hr>: The Thematic Break (Horizontal Rule) element
+    The <hr> HTML element represents a thematic break between paragraph-level elements: 
+    for example, a change of scene in a story, or a shift of topic within a section.
+    -->
+    <hr>
+        <p>this is example of hr tag</p>
+    <hr>
+
+    <!-- next is entities in 'HTML'-->
+    
+    <!-- 
+    Entity is a term from the Standard Generalized Markup Language (SGML), 
+    which refers to a reference to information that can be defined once and used 
+    throughout a document.
+     -->
+    
+    <!-- 
+    The term "HTML Entity" is used as a synonym for a character reference — a pattern of characters
+    that can represent another character in the HTML. For example, &lt; is used to represent 
+    the less-than symbol (<) in HTML content. 
+    -->
+
+    <!-- now we display H1 tage useing entities -->
+
+    <h1> THIS IS HEADING H1 AND THIS IS START WITH &lt;H1&gt; 
+    in center of this tag we write some content &nlt;H1&gt; </h1>
+
+    <!-- next is comment in 'HTML' -->
+
+    <!-- This is a single-line comment in HTML -->
+
+    <!-- 
+    This is a multi-line comment.
+    It can span across several lines
+    to provide detailed documentation or notes. 
+    -->
+    
+    <!-- next is B tag B tag use for make text Bold -->
+
+    <p>this is paragraph and now we use <b> BOLD </b> Tag</p>
+    
+    <p>this is paragraph and now we use <I> ITALIC </I> Tag</p>
+    
+    <p>this is paragraph and now we use <U> UNDERLINE </U> Tag</p>
+    
+    <p>THIS IS PARAGRAPH AND NOW WE USE <small> SMALL </small> Tag</p>
+    
+    <p>THIS IS PARAGRAPH AND NOW WE USE : (2<sup>2</sup>) super script Tag</p>
+    
+    <p>THIS IS PARAGRAPH AND NOW WE USE : (H<sub>2</sub>O) sub script Tag</p>
+
+    <!-- next is 'LIST' -->
+
+    <!-- <li>: The List Item element -->
+    
+    <!-- 
+    The <li> HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. 
+    -->
+    <hr>
+    <h3> this is orderd list example </h3>
+    <ol>
+        <li>
+            this is item frist
+        </li>
+        <li>
+            this is item second
+        </li>
+        <li>
+            this is item third
+        </li>
+    </ol>
+    
+    <hr>
+
+    <h3> this is un-orderd list example </h3>
+
+    <ul>
+        <li>
+            this is item 1
+        </li>
+        <li>
+            this is item 2
+        </li>
+        <li>
+            this is item 3
+        </li>
+    </ul>
+     
+    <hr>
+
+    <h3> this is orderd list with diffrent type </h3>
+    <ol type="i">
+        
+        <li>
+            this is item 1
+        </li>
+        <li>
+            this is item 2
+        </li>
+        <li>
+            this is item 3
+        </li>
+    </ol>
+    <hr>
+    
+    <h3> this is orderd list with diffrent type </h3>
+    <ol type="I">
+        
+        <li>
+            this is item 1
+        </li>
+        <li>
+            this is item 2
+        </li>
+        <li>
+            this is item 3
+        </li>
+    </ol>
+
+    <hr>
+
+<h3> this is orderd list with diffrent type </h3>
+    <ol type="A">
+        
+        <li>
+            this is item 1
+        </li>
+        <li>
+            this is item 2
+        </li>
+        <li>
+            this is item 3
+        </li>
+    </ol>
+
+    <hr>
+
+<h3> this is orderd list with diffrent type </h3>
+    <ol type="a">
+        
+        <li>
+            this is item 1
+        </li>
+        <li>
+            this is item 2
+        </li>
+        <li>
+            this is item 3
+        </li>
+    </ol>
+
+
+
+
+</body>
+
+</html>
