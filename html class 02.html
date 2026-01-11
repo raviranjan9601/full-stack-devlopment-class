@@ -1,0 +1,114 @@
+<!-- this is second class and we are learn more tags in this class -->
+
+<!-- first tag is Hyper link tag -->
+
+<!-- 
+<a>: The Anchor element
+The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+
+Content within each <a> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <a> element will activate it. -->
+
+<hr>    
+
+    <p> 
+    1. No 'target' (default behavior) Same as: target="_self"
+    </p>
+        <a href="https://www.google.com/">google</a>
+<!--
+What happens:
+
+ Opens the link in the same tab/window
+ This is the default behavior
+-->
+<hr>
+
+    <p>
+    2️. 'target="_blank"'
+    </p>
+        <a href="https://www.google.com/" target="_blank">google_blank</a>
+
+<!-- 
+What happens:
+
+ Opens the link in a new tab (or new window, depending on browser settings)
+
+ Most common use case:
+
+ External links
+ When you don’t want users to leave your site
+    -->
+<hr>
+    <p>
+    Best practice (security):
+    </p>
+        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">2nd</a>
+
+<hr>
+
+    <P>
+    3. 'target="_self"'
+    </P>
+        <a href="https://www.google.com/" target="_self">google_self</a>
+
+<!-- 
+What happens:
+
+ Opens the link in the same frame/tab
+ This is the default, even if you don’t write it
+
+ Mostly used for clarity or overriding other frame behavior
+ -->
+<hr>
+    <p>
+    4. 'target="_parent"'
+    </p>
+        <a href="https://www.google.com/" target="_parent">google_parent</a>
+
+<!-- 
+What happens:
+
+ Opens the link in the parent frame
+
+Relevant only if your page is inside an <iframe>
+
+Example:
+
+ Page is inside an iframe
+ '_parent' loads the link in the page containing that iframe
+
+If not inside an iframe → behaves like '_self'
+
+ -->
+<hr>
+    <p>
+    5. 'target="_top"'
+    </p>
+<a href="https://www.google.com/" target="_top">google_top</a>
+
+<!-- 
+What happens:
+
+ Opens the link in the top-level window
+ hreaks out of all iframes
+
+Useful when:
+
+ Your site is embedded inside multiple iframes
+ You want to force navigation of the full browser window
+
+ -->
+
+<!-- Quick Comparison Table
+
+| Target    | Opens where?   | Common Use        |
+| --------- | -------------- | ----------------- |
+| (none)   | Same tab       | Default           |
+| '_self'   | Same tab       | Explicit default  |
+| '_blank'  | New tab/window | External links    |
+| '_parent' | Parent frame   | Inside iframes    |
+| '_top'    | Full window    | Escape all frames |
+
+ -->
+<hr>
+<br>
+    <a href="html class 01.html"> this link refer you to frist class</a>
