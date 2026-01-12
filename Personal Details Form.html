@@ -1,0 +1,30 @@
+<!-- make some -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Personal Details Form</h1>
+
+            <p>Frist Name: <input type="text" name="frist_name" id="frist_name" required></p>
+            <p>Last Name: <input type="text" name="last_name" id="last_name" required></p>
+
+            <p>DOB- <input type="date" name="dob" required></p>
+
+        <fieldset>
+            <legend>Address</legend>
+            <textarea name="address" id="address1" cols="35" rows="7" placeholder="your full address" required>enter your full address</textarea>
+        </fieldset>
+
+            <p>Mobile Number: <input type="tel" name="mobile_number" maxlength="10" pattern="[0-9]{10}" required></p>
+            <p>Email: <input type="email" name="email" required></p>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
