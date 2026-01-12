@@ -1,0 +1,45 @@
+<!-- in this class we learn form tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<body>
+    
+    <form action="">
+        <h1> University Registration Form </h1>
+    
+            <h3>1. Personal Information</h3>
+
+                <p>Enter Your Full Name: <input type="text" name="name"></p>
+                <P>Enter Your DOB: <input type="date"></P>
+                <p>
+                    <fieldset> 
+                        <legend>Gender</legend>
+                            <input type="radio" name="Gender" id="MALE" required>male
+                            <input type="radio" name="Gender" id="FEMALE">female 
+                            <input type="radio" name="Gender" id="OTHER">Other 
+                    </fieldset>               
+                </p>
+
+            <!-- 
+                <label for="address">Address</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                <label>Permanent Address</label><br>
+            -->
+                <input type="text" name="house_no" placeholder="House No / Building Name" required><br><br>
+                <input type="text" name="street" placeholder="Street / Area" required><br><br>
+                <input type="text" name="city" placeholder="City" required><br><br>
+                <input type="text" name="state" placeholder="State / Province" required><br><br>
+                <input type="text" name="postal_code" placeholder="Postal Code" required><br><br>
+                <input type="text" name="country" placeholder="Country" required>
+                
+
+
+    </form>
+
+</body>
+</html>
