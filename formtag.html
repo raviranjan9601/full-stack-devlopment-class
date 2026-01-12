@@ -5,9 +5,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>online shopping form</title>
+    <title>online shopping payment form </title>
 </head>
 <body>
+    <form action="">
+        <h1>Payment Form</h1>
     
+        <h3>Personal details</h3>
+            <div>
+                <p>Frist Name: <input type="text" name="frist Name" placeholder="Enter Your Frist Name" required  autocomplete="off"></p>
+                <p>Last Name: <input type="text" name="Last Name" placeholder="Enter Your Last Name" required  autocomplete="off"></p>
+            </div>
+
+            <div>
+                <p>
+                    <Legend>Gender :
+                        <input type="radio" name="Gender" id="Male">Male 
+                        <input type="radio" name="Gender" id="Female">Female
+                        <input type="radio" name="Gender" id="Other">Other
+                    </Legend>
+                </p>
+            </div>
+
+            <div>
+                <p>DOB: <input type="date" name="DOB" placeholder="enter your date of birth" required></p>
+            </div>
+
+            <div>
+                <legend>Address: <br>
+                    <textarea name="address" id="address 1" rows="7" cols="35">Address (area and Street)</textarea>
+                    <br><br>
+                    <input type="text" placeholder="Landmark" required name="Landmark">
+
+                    <input type="text" placeholder="City/District/Town" required name="city">
+                    <br><br>
+                    <label for="state"></label>
+                    <select name="state" id="state" required>
+                        <option value="">Select State --</option>
+                        <option value="Andhra Pardesh">Andhra Pardesh</option>
+                        <option value="Arunchal Pardesh">Arunchal Pardesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    </select>
+
+                    <p class="address type"> <small>Address Type</small>
+                        <br>
+                        <input type="radio" name="type" id="HOME">Home 
+                        <input type="radio" name="type" id="WORK">Work
+                    </p>          
+                </legend>
+            </div>
+
+            <div>
+                <p>Phone: <input type="text" name="Phone/Email" maxlength="10" placeholder="Enter Phone number" required></p>
+                <p>Email: <input type="email" name="Phone/Email" placeholder="Enter Email Id" required></p>
+            </div>
+
+            <div>
+                <p>Zip Code: <input type="text" name="pincode" maxlength="6" placeholder="Enter PINCODE" required></p>
+                <p>PAN CARD: <input type="text" name="IDCARD" required></p>
+                <p>AADHAR: <input type="text" name="IDCARD" required></p>
+            </div>
+<hr>
+            <h3>Payment Information</h3>
+
+            <div>
+                <label for="Cardtype">Card Type: </label>
+                <select name="Card_type" id="cards" required>
+                    <option value="">-- Select a Card Type --</option>
+                    <option value="RuPay">RuPay</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Master Card">Master Card</option>
+                </select>
+
+                <p>Card Number: <input type="text" name="card_info" id="Card_Name" maxlength="12" required placeholder="Enter 12 digit Card Number"></p>
+                <p>Expire Date: <input type="date" name="card_info" id="Exp_Date" required></p>
+                <p>CVV: <input type="password" name="card_info" id="CVV" placeholder="Enter CVV Number" maxlength="3" required></p>
+
+                <input type="button" name="payment" value="Pay button" required>
+
+            </div>
+    </form>
 </body>
 </html>
