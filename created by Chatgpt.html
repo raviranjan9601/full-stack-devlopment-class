@@ -1,0 +1,121 @@
+<!-- this is for learning purpose  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Payment Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+    <h1>Payment Form</h1>
+
+    <h3>Personal Details</h3>
+
+    <p>
+        First Name:
+        <input type="text" name="first_name" placeholder="Enter Your First Name" required>
+    </p>
+
+    <p>
+        Last Name:
+        <input type="text" name="last_name" placeholder="Enter Your Last Name" required>
+    </p>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+    </fieldset>
+
+    <p>
+        DOB:
+        <input type="date" name="dob" required>
+    </p>
+
+    <fieldset>
+        <legend>Address</legend>
+        <textarea name="address" id="address1" rows="5" cols="35"
+            placeholder="Area and Street"></textarea><br><br>
+
+        <input type="text" name="landmark" placeholder="Landmark" required>
+        <input type="text" name="city" placeholder="City/District/Town" required><br><br>
+
+        <select name="state" required>
+            <option value="">Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+        </select>
+
+        <p>
+            Address Type:<br>
+            <input type="radio" name="address_type" value="home"> Home
+            <input type="radio" name="address_type" value="work"> Work
+        </p>
+    </fieldset>
+
+    <p>
+        Phone:
+        <input type="tel" name="phone" maxlength="10" required>
+    </p>
+
+    <p>
+        Email:
+        <input type="email" name="email" required>
+    </p>
+
+    <p>
+        Zip Code:
+        <input type="text" name="pincode" maxlength="6" required>
+    </p>
+
+    <p>
+        PAN Card:
+        <input type="text" name="pan" required>
+    </p>
+
+    <p>
+        Aadhaar:
+        <input type="text" name="aadhaar" required>
+    </p>
+
+    <hr>
+
+    <h3>Payment Information</h3>
+
+    <p>
+        Card Type:
+        <select name="card_type" required>
+            <option value="">Select Card Type</option>
+            <option value="RuPay">RuPay</option>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+        </select>
+    </p>
+
+    <p>
+        Card Number:
+        <input type="text" name="card_number" maxlength="16" required>
+    </p>
+
+    <p>
+        Expiry Date:
+        <input type="month" name="expiry_date" required>
+    </p>
+
+    <p>
+        CVV:
+        <input type="password" name="cvv" maxlength="3" required>
+    </p>
+
+    <input type="submit" value="Pay Now">
+
+</form>
+
+</body>
+</html>
