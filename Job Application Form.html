@@ -1,0 +1,97 @@
+<!-- Job Application Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            
+            <legend>Job Application Form</legend>
+
+        
+            <p>
+                Frist Name: <input type="text" name="frist_name" placeholder="frist_name" required>
+            </p>
+            <p>
+                Last Name: <input type="text" name="last_name"  placeholder="last_name" required>
+            </p>
+            <p>
+                Gender: <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" >Female
+                <input type="radio" name="gender" value="other" >Other
+            </p>
+
+            <p>
+                Email: <input type="email" name="email" placeholder="Email Id" required>
+            </p>
+            <p>
+                Phone: <input type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+            </p>
+            <p>
+                Position Applied For: 
+                <select name="Position" id="Position" required>
+                    <option value="">-- Select Your Position For Apply</option>
+                    <option value="UI-UX Designer">UI-UX Designer</option>
+                    <option value="UI Designer">UI Designer</option>
+                    <option value="UX Designer">UX Designer</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                </select>
+            </p>
+            <p>
+                Frontend Skills:
+                    <input type="checkbox" name="skills[]" value="HTML"> HTML
+                    <input type="checkbox" name="skills[]" value="CSS"> CSS
+                    <input type="checkbox" name="skills[]" value="JavaScript"> JavaScript
+                    <input type="checkbox" name="skills[]" value="Bootstrap"> Bootstrap
+                    <input type="checkbox" name="skills[]" value="Tailwind"> Tailwind CSS
+                    <input type="checkbox" name="skills[]" value="React"> React
+            </p>
+            <p>
+                Backend Skills:
+                    <input type="checkbox" name="skills[]" value="NodeJS"> Node.js
+                    <input type="checkbox" name="skills[]" value="Express"> Express.js
+                    <input type="checkbox" name="skills[]" value="PHP"> PHP
+                    <input type="checkbox" name="skills[]" value="Python"> Python
+                    <input type="checkbox" name="skills[]" value="Java"> Java
+            </p>
+            <p>
+                Database Skills:
+                    <input type="checkbox" name="skills[]" value="MySQL"> MySQL
+                    <input type="checkbox" name="skills[]" value="MongoDB"> MongoDB
+                    <input type="checkbox" name="skills[]" value="PostgreSQL"> PostgreSQL
+            </p>
+
+            <p>
+                Tools & Other Skills (VERY professional):
+
+                <input type="checkbox" name="skills[]" value="Git"> Git
+                <input type="checkbox" name="skills[]" value="GitHub"> GitHub
+                <input type="checkbox" name="skills[]" value="REST API"> REST API
+                <input type="checkbox" name="skills[]" value="Linux"> Linux
+                <input type="checkbox" name="skills[]" value="Figma"> Figma
+            </p>
+
+            <p>Experience (in Year):
+                <!-- <input type="number" name="experience" min="1" max="7" maxlength="1" required> -->
+                 <input type="number" name="experience" min="2" max="20" required>
+
+            </p>
+            <p>
+                Resume:<input type="file" name="resume" value="resume" placeholder="Upload Your Resume Here" required>
+            </p>
+            <input type="submit" value="Submit">
+            
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
