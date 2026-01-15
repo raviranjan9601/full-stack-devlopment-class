@@ -24,7 +24,7 @@ This repository reflects my growth as a developer and is updated regularly.
 - HTML5  
 - CSS3  
 - JavaScript  
-- React (learning)
+- React ()
 
 # Backend
 - Node.js  
