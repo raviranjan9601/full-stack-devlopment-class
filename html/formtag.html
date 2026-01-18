@@ -12,12 +12,12 @@
         <h1>Payment Form</h1>
     
         <h3>Personal details</h3>
-            <div>
+            <div class="name_box">
                 <p>Frist Name: <input type="text" name="frist Name" placeholder="Enter Your Frist Name" required  autocomplete="off"></p>
                 <p>Last Name: <input type="text" name="Last Name" placeholder="Enter Your Last Name" required  autocomplete="off"></p>
             </div>
 
-            <div>
+            <div class="gender_box">
                 <p>
                     <Legend>Gender :
                         <input type="radio" name="Gender" id="Male">Male 
@@ -27,11 +27,11 @@
                 </p>
             </div>
 
-            <div>
+            <div class="DOB_box">
                 <p>DOB: <input type="date" name="DOB" placeholder="enter your date of birth" required></p>
             </div>
 
-            <div>
+            <div class="address_box">
                 <legend>Address: <br>
                     <textarea name="address" id="address 1" rows="7" cols="35">Address (area and Street)</textarea>
                     <br><br>
@@ -70,12 +70,12 @@
                 </legend>
             </div>
 
-            <div>
+            <div class="contect_datiles">
                 <p>Phone: <input type="text" name="Phone/Email" maxlength="10" placeholder="Enter Phone number" required></p>
                 <p>Email: <input type="email" name="Phone/Email" placeholder="Enter Email Id" required></p>
             </div>
 
-            <div>
+            <div class="id_datels">
                 <p>Zip Code: <input type="text" name="pincode" maxlength="6" placeholder="Enter PINCODE" required></p>
                 <p>PAN CARD: <input type="text" name="IDCARD" required></p>
                 <p>AADHAR: <input type="text" name="IDCARD" required></p>
@@ -83,7 +83,7 @@
 <hr>
             <h3>Payment Information</h3>
 
-            <div>
+            <div class="payment_box">
                 <label for="Cardtype">Card Type: </label>
                 <select name="Card_type" id="cards" required>
                     <option value="">-- Select a Card Type --</option>
