@@ -1,0 +1,24 @@
+h2{
+    text-align: center;
+    color: blue;
+}
+#pin_code,#frist_name,#last_name,#dob,#phone,#email,#city,#state{
+    width: 150px;
+}
+textarea{
+    width: 150px;
+    height: 40px;
+}
+p::frist-line{
+    color:brown;
+}
+#submit{
+    width: 100px;
+    height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 15px;
+    border: 5px;
+    border-radius: 30px;
+    background-color: green;
+}

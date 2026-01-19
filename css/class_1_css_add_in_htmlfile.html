@@ -1,18 +1,93 @@
-<!-- learn about css  -->
- <!-- css stands for cascading style sheet -->
-  
- 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css class 1</title>
-    <link rel="stylesheet" href="css_style_1.css">
+<html>
+    <head>
+        <title>
+            css level 1
+        </title>
+        <link rel="stylesheet" href="css_style_1.css">
+        <style>
+            body{
+                background-color: blanchedalmond;
+
+            }
+            .form-container{
+            width: 380px;
+            margin: 10px auto;
+            background: #58585800;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            form{
+                width: 350px;
+                margin: 3px;
+                background-color:#ffffab;
+                padding: 14px;
+                border-radius: 3px;
+                }
+            
+            
+
+            label{
+                display: block;
+                font-weight: bold;
+                color: blueviolet;
+            }
+
+            </style>
+    </head>
+    <body>
+        <div class="form-container">
+        <!-- inline css  -->
+            <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; color: brown; font-size: 35px;">Course Registration Form</h1>
+            <form action="#">
+                <fieldset>
+                    <h2>personal details<h3>
+                        <label>Frist Name:</label>
+                        <input id="frist_name" type="text" name="frist_name" required><br>
+
+                        <label>Last Name:</label>
+                        <input id="last_name" type="text" name="last_name" required><br>
+                        
+                        <label>DOB:</label>
+                        <input id="dob" type="date" name="dob" required><br>
+                        
+                        <label>Gender:</label>
+                        <input id="gender" type="radio" name="gender" value="male" required>Male
+                        <input id="gender" type="radio" name="gender" value="female">Female
+                        <input id="gender" type="radio" name="gender" value="other">Other<br>                
+                    
+                        <label>Phone:</label>
+                        <input id="phone" type="tel" name="phone" maxlength="10" minlength="10" required><br>
+                        
+                        <label>Email Id:</label>
+                        <input id="email" type="email" name="phone" required><br>                    
+                        
+                        <label>Address</label>
+                        <textarea 
+                        name="address" 
+                        rows="3.5" 
+                        placeholder="area/colony/" 
+                        required>
+                        </textarea><br>
+
+                        <label>City</label>
+                        <input id="city" type="text" name="city" required><br>
+
+                        <label>Pin Code</label>
+                        <input id="pin_code" type="tel" min="6" max="6" name="pin_code" required><br>
+
+                        <label>State</label>
+                        <input id="state" type="text" name="state" required><br><br>
+
+                        <input id="submit" type="submit" name="submit"  required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="submit" type="reset">
+                        <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                        </p>
 
 
-</head>
-<body>
-    
-</body>
+                </fieldset>
+            </form>
+        </div>
+    </body>
 </html>
